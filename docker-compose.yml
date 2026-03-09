@@ -1,0 +1,14 @@
+services:
+  logvault:
+    build: .
+    container_name: logvault
+    ports:
+      - "8080:8080"
+    volumes:
+      - /var/log/nginx:/app/logs:ro        # :ro = read-only (safe for production)
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- http://localhost:8080/health || exit 1"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 5s
