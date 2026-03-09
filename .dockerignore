@@ -1,0 +1,28 @@
+# Git
+.git
+.gitignore
+
+# Docs
+*.md
+README*
+LICENSE*
+
+# Logs (mounted as volume at runtime)
+logs/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Test files
+*_test.go
+
+# Binary
+logvault
+*.exe
