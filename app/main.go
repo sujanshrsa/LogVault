@@ -272,7 +272,7 @@ var browserTmpl = template.Must(template.New("browser").Funcs(funcMap).Parse(`<!
     </div>
     {{end}}
 
-    <div class="footer">LogVault · Minimal Log Server · Port {{.Port}}</div>
+    <div class="footer">LogVault · Minimal Log Server · by Lokendra Bhat</div>
   </div>
 </body>
 </html>`))
